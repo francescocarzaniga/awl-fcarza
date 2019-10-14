@@ -18,7 +18,7 @@
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
   dask = pkgs.python3Packages.callPackage ./pkgs/development/python-modules/dask { };
-  distributed = pkgs.python3Packages.callPackage ./pkgs/development/python-modules/distributed { };
+  # distributed = pkgs.python3Packages.callPackage ./pkgs/development/python-modules/distributed { };
   dask-ml = pkgs.python3Packages.callPackage ./pkgs/development/python-modules/dask-ml { };
   dask-jobqueue = pkgs.python3Packages.callPackage ./pkgs/development/python-modules/dask { }; 
 }
