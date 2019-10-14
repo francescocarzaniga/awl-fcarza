@@ -36,9 +36,9 @@ buildPythonPackage rec {
     sha256 = "77672869c46ea9bb4b2e26a0e9d5ce24d2cb9ad3810166f496ac4d2a1beff6c9";
   };
 
-  checkInputs = [ dask pytest pytest-repeat pytest-faulthandler pytest-timeout mock joblib ];
+  checkInputs = [ pytest pytest-repeat pytest-faulthandler pytest-timeout mock joblib ];
   propagatedBuildInputs = [
-      dask click cloudpickle dask msgpack psutil six
+      click cloudpickle dask msgpack psutil six dask
       sortedcontainers tblib toolz tornado zict pyyaml mpi4py bokeh
   ] ++ lib.optionals (!isPy3k) [ futures singledispatch ];
 
