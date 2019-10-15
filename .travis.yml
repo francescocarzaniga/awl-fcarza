@@ -5,9 +5,7 @@ sudo: false
 env:
   global:
     - CACHIX_CACHE=awl-fcarza
-    - NUR_REPO=francescocarzaniga
-
-matrix:
+    - NUR_REPO=awl-fcarza
   include:
     - env: NIX_CHANNEL=https://nixos.org/channels/nixpkgs-unstable
     - env: NIX_CHANNEL=https://nixos.org/channels/nixos-unstable
