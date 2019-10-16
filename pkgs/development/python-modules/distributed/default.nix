@@ -38,7 +38,7 @@ buildPythonPackage rec {
 
   checkInputs = [ pytest pytest-repeat pytest-faulthandler pytest-timeout mock joblib ];
   propagatedBuildInputs = [
-      click cloudpickle dask msgpack psutil six
+      click cloudpickle nur.repos.awl-fcarza.dask msgpack psutil six
       sortedcontainers tblib toolz tornado zict pyyaml mpi4py bokeh
   ] ++ lib.optionals (!isPy3k) [ futures singledispatch ];
 
