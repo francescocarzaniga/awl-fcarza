@@ -6,6 +6,11 @@
 # commands such as:
 #     nix-build -A mypackage
 
+let
+  nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
+      inherit pkgs;
+    };
+in
 { pkgs ? import <nixpkgs> {} }:
 
 {
