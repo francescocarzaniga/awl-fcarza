@@ -19,7 +19,7 @@
   # ...
   dask = pkgs.python3Packages.callPackage ./pkgs/development/python-modules/dask { };
   distributed = pkgs.python3Packages.callPackage ./pkgs/development/python-modules/distributed { };
-  dask = pkgs.python3Packages.callPackage ./pkgs/development/python-modules/dask-ml { };
+  dask-ml = pkgs.python3Packages.callPackage ./pkgs/development/python-modules/dask-ml { };
   dask-jobqueue = pkgs.python3Packages.callPackage ./pkgs/development/python-modules/dask-jobqueue { }; 
 }
 
