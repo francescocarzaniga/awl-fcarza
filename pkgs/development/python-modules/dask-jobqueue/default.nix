@@ -2,7 +2,7 @@
 , buildPythonPackage
 , fetchPypi
 , dask
-, distributed
+, nur.repos.awl-fcarza.distributed
 , docrep
 , pytest
 }:
